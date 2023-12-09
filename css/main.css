@@ -523,3 +523,9 @@ html,body {
         width: 28px;
     }
 }
+
+@media (max-width: 399px) {
+    .header {
+        background-image: url(./../img/mobily-header-bg-wood.png);
+    }
+}
