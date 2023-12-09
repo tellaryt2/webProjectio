@@ -439,6 +439,10 @@ html,body {
 
     /* nav */
 
+    .nav {
+        background-image: url(./../img/mini-nav-bg-wood.png);
+    }
+
     .nav-row {
         justify-content: space-between;
     }
@@ -450,6 +454,7 @@ html,body {
     /* header */
 
     .header {
+        background-image: url(./../img/mini-header-bg-wood.png);
         min-height: unset;
     }
 
