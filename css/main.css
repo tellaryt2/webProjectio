@@ -105,6 +105,11 @@ html,body {
     background-color: var(--dark-bg);
     color: var(--header-text);
     letter-spacing: normal;
+
+    background-image: url(./../img/nav-bg-wood.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
 }
 
 .nav-row {
@@ -222,7 +227,7 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./../img/header-bg.png);
+    background-image: url(./../img/header-bg-wood.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
