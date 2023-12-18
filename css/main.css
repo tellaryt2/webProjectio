@@ -313,6 +313,7 @@ html,body {
 
 
 .btn-outline {
+    display: inline-block;
     height: 48px;
     padding: 12px 20px;
     border-radius: 5px;
@@ -402,6 +403,7 @@ html,body {
 
 .project__img {
     border-radius: 10px;
+
 }
 
 .project__title {
@@ -413,6 +415,35 @@ html,body {
 }
 
 /* page video service */
+
+
+/* project button */
+
+.btn-buy {
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    padding: 12px 28px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: var(--white);
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.btn-buy:hover {
+    opacity: 0.8;
+}
+
+.btn-buy:active {
+    position: relative;
+    top: 1px
+}
 
 .project-details {
     margin: 0 auto;
@@ -441,6 +472,37 @@ html,body {
     margin-bottom: 30px;
 }
 
+
+.img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.img-wrapper__list {
+    margin-bottom: 40px;
+}
+
+.img-wrapper__mini {
+    padding-bottom: 5px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    max-width: 150px;
+}
+
+.img-wrapper__cover {
+    order: 9;
+    position: relative;
+
+    margin-bottom: 40px;
+    max-width: 600px;
+
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
 /* page skills */
 
 .content-list {
@@ -453,7 +515,7 @@ html,body {
     row-gap: 40px;
 }
 
-.content-list a {
+.content-list a p {
     color: var(--accent);
 }
 
@@ -495,7 +557,24 @@ html,body {
 .copyright p+p {
     margin-top: 0.5em;
 }
+@media (max-width: 929px) {
 
+    .img-wrapper__cover {
+        order: 0;
+        position: unset;
+        margin-bottom: 5px;
+    }
+
+    .img-wrapper__list {
+        display: flex;
+        column-gap: 5px;
+        margin-bottom: 25px;
+    }
+
+    .img-wrapper__mini {
+        max-width: 150px;
+    }
+}
 
 @media (max-width: 640px) {
 
@@ -550,6 +629,23 @@ html,body {
         font-size: 30px;
     }
 
+    /* project */
+
+    .project {
+        text-align: center;
+    }
+
+    .project__title {
+        padding-left: unset;
+        padding-right: unset;
+        padding-bottom: 10px;
+    }
+    
+    .btn-buy {
+        margin-left: unset;
+        margin-bottom: 15px;
+    }
+
     /* content-list */
 
     .content-list {
@@ -569,6 +665,25 @@ html,body {
     .project-details__desc {
         font-size: 22px;
         margin-bottom: 20px;
+    }
+
+    /* img wrapper */
+
+    .img-wrapper__cover {
+        order: 0;
+        position: unset;
+        max-width: 300px;
+        margin-bottom: 5px;
+    }
+
+    .img-wrapper__list {
+        display: flex;
+        column-gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .img-wrapper__mini {
+        max-width: 70px;
     }
 
     /* footer */
